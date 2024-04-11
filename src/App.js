@@ -10,13 +10,13 @@ function App() {
     <div id="root">
       <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
         <div className="bar">
-          <button
+          {/* <button
             onClick={() => {
               console.log(univerRef.current?.getData());
             }}
           >
             Get Data
-          </button>
+          </button> */}
         </div>
         <UniverSheet style={{ flex: 1 }} ref={univerRef} data={data} />
       </div>

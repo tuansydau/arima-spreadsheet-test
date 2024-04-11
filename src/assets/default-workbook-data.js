@@ -23,7 +23,7 @@ export const DEFAULT_WORKBOOK_DATA = {
   id: "workbook-01",
   locale: LocaleType.ZH_CN,
   name: "universheet",
-  sheetOrder: ["sheet-01", "sheet-02", "sheet-03"],
+  sheetOrder: ["sheet-01"],
   appVersion: "3.0.0-alpha",
   sheets: {
     "sheet-01": {
@@ -61,18 +61,6 @@ export const DEFAULT_WORKBOOK_DATA = {
       selections: ["A2"],
       rightToLeft: BooleanNumber.FALSE,
       pluginMeta: {},
-    },
-    "sheet-02": {
-      type: SheetTypes.GRID,
-      id: "sheet-02",
-      name: "sheet2",
-      cellData: {},
-    },
-    "sheet-03": {
-      type: SheetTypes.GRID,
-      id: "sheet-03",
-      name: "sheet3",
-      cellData: {},
     },
   },
 };
