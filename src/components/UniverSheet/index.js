@@ -15,12 +15,7 @@ import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
-import { enUS as UniverDesignEnUS } from "@univerjs/design";
-import { enUS as UniverDocsUIEnUS } from "@univerjs/docs-ui";
-import { enUS as UniverSheetsEnUS } from "@univerjs/sheets";
-import { enUS as UniverSheetsUIEnUS } from "@univerjs/sheets-ui";
-import { enUS as UniverUIEnUS } from "@univerjs/ui";
-
+import { locales } from "./locale";
 // eslint-disable-next-line react/display-name
 const UniverSheet = forwardRef(({ data }, ref) => {
   const univerRef = useRef(null);
@@ -40,11 +35,7 @@ const UniverSheet = forwardRef(({ data }, ref) => {
       locale: LocaleType.EN_US,
       locales: {
         [LocaleType.EN_US]: {
-          ...UniverSheetsEnUS,
-          ...UniverDocsUIEnUS,
-          ...UniverSheetsUIEnUS,
-          ...UniverUIEnUS,
-          ...UniverDesignEnUS,
+          ...locales.enUS,
         },
       },
     });

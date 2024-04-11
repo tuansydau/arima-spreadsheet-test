@@ -21,7 +21,7 @@ import { BooleanNumber, LocaleType, SheetTypes } from "@univerjs/core";
  */
 export const DEFAULT_WORKBOOK_DATA = {
   id: "workbook-01",
-  locale: LocaleType.ZH_CN,
+  locale: LocaleType.EN_US,
   name: "universheet",
   sheetOrder: ["sheet-01"],
   appVersion: "3.0.0-alpha",
@@ -31,9 +31,12 @@ export const DEFAULT_WORKBOOK_DATA = {
       id: "sheet-01",
       cellData: {
         0: {
-          0: {
-            v: "Hello World",
-          },
+          0: { v: "0,0" },
+          1: { v: "0,1" },
+        },
+        1: {
+          0: { v: "1,0" },
+          1: { v: "1,1" },
         },
       },
       name: "sheet1",
